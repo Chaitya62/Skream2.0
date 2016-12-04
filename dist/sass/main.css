@@ -1,0 +1,159 @@
+body, html, nav, header {
+  width: auto;
+  overflow-x: hidden; }
+
+nav {
+  height: auto;
+  width: 100%;
+  position: fixed !important;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 10px;
+  border: 0;
+  margin: 0;
+  background-color: #d1d2d4 !important;
+  color: #de631e !important; }
+
+#bars {
+  color: #de631e; }
+
+#bars:hover {
+  color: #eb8122; }
+
+body, header {
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  text-align: center; }
+
+#parallax {
+  background-image: url("https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg");
+  background-attachment: fixed;
+  bakcground-position: center;
+  height: 40vh; }
+
+.container .side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  visibility: hidden;
+  width: 300px;
+  transform: translate(-300px, 0px);
+  height: 100%;
+  background: #eee;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.open {
+  transform: translate(300px, 0px) !important; }
+
+#main {
+  position: relative;
+  transform: translate(0px, 0px);
+  transition: transform 0.6s;
+  width: 100vw; }
+
+.open2 {
+  transform: translate(0px, 0px) !important;
+  visibility: visible !important; }
+
+.sidebar-nav li {
+  height: auto;
+  padding: 10px;
+  margin-bottom: 2px;
+  text-align: left;
+  font-size: 19px;
+  color: black !important; }
+  .sidebar-nav li:hover {
+    color: #eb8122;
+    background-color: #d1d2d4; }
+
+.side-bar {
+  overflow: hidden; }
+
+.sidebar-nav {
+  padding: 0px;
+  list-style: none; }
+
+.ext-link {
+  position: fixed;
+  bottom: 0;
+  right: 1%; }
+  .ext-link ul {
+    display: block; }
+    .ext-link ul li {
+      display: inline;
+      margin: 10px; }
+      .ext-link ul li a {
+        color: #4664a4;
+        font-size: 20px;
+        text-decoration: none; }
+        .ext-link ul li a:hover {
+          color: #97b1dc; }
+
+.register {
+  position: fixed;
+  bottom: 9%;
+  right: 3.5%;
+  border-radius: 50%;
+  background: #4664a4;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  cursor: pointer; }
+
+.register i {
+  position: relative !important;
+  top: calc(40% - 10px);
+  color: white; }
+
+footer {
+  position: absolute;
+  bottom: 0; }
+
+.container .side-bar {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  z-index: 100;
+  visibility: hidden;
+  width: 300px;
+  transform: translate(-300px, 0px);
+  height: auto;
+  background: #eee;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+#container {
+  margin: 0;
+  padding: 0; }
+
+.open {
+  transform: translate(300px, 0px) !important; }
+
+#main {
+  position: relative;
+  transform: translate(0px, 0px);
+  transition: transform 0.6s; }
+
+.main {
+  width: 100%;
+  height: 200vh;
+  overflow-y: scroll; }
+
+.open2 {
+  transform: translate(0px, 0px) !important;
+  visibility: visible !important; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+/*# sourceMappingURL=main.css.map */

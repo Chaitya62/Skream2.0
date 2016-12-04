@@ -12,6 +12,7 @@ var NavbarHandler = {
 			this.mainPage = $("#main");
 			this.sideBar =  $(".side-bar");
 			this.toggleButton = $("#fuck");
+			this.mainContainer = $('#main .container');
 			
 		},
 		toggleNav: function(){
@@ -19,7 +20,9 @@ var NavbarHandler = {
 			this.container.toggleClass("open1");
 			this.mainPage.toggleClass("open");
 			this.sideBar.toggleClass("open2");
-		},
+			
+		}
+		,
 		eventBind:function(){
 			this.toggleButton.on("click",this.toggleNav.bind(this));
 		}

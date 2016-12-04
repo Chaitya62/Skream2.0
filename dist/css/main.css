@@ -1,6 +1,29 @@
+@font-face {
+  font-family: "mosk";
+  src: url("..../assets/font/MB700.ttf");
+  src: url("../../assets/font/MUB900.ttf");
+  src: url("../../assets/font/MB700.ttf");
+  src: url("../../assets/font/MBB800.ttf");
+  src: url("../../assets/font/MSB600.ttf");
+  src: url("../../assets/font/MM500.ttf");
+  src: url("../../assets/font/MN400.ttf");
+  src: url("../../assets/font/ML300.ttf");
+  src: url("../../assets/font/ML200.ttf");
+  src: url("../../assets/font/MT100.ttf"); }
+.margin-zero {
+  margin-left: 0 !important; }
+
 body, html, nav, header {
   width: auto;
+  font-family: "mosk";
   overflow-x: hidden; }
+
+p {
+  font-family: "mosk";
+  wegiht: 200; }
+
+h1 {
+  font-family: "mosk"; }
 
 nav {
   height: auto;
@@ -11,16 +34,56 @@ nav {
   right: 0;
   left: 0;
   padding: 10px;
+  padding-bottom: 0;
   border: 0;
   margin: 0;
   background-color: #d1d2d4 !important;
-  color: #de631e !important; }
+  color: #de631e !important;
+  overflow: hidden; }
+
+#navbar-logo {
+  height: 5vh;
+  margin-left: 20%; }
+
+#main-logo {
+  height: 56vh;
+  width: auto; }
+
+.navbar {
+  height: 6vh !important; }
+
+.navbar-container {
+  display: inline-block;
+  width: 100%; }
+
+.nav-current {
+  display: inline-block;
+  float: right;
+  position: relative;
+  right: 0;
+  font-size: 21px;
+  color: black; }
+
+.navbar-header {
+  display: inline-block; }
+
+.navbar-brand {
+  padding-top: 0 !important; }
 
 #bars {
+  margin-left: 41%;
   color: #de631e; }
 
 #bars:hover {
   color: #eb8122; }
+
+#main {
+  overflow-x: hidden;
+  position: relative;
+  z-index: 100; }
+  #main .container {
+    margin: auto;
+    transition: margin 0.5s ease-in-out; }
 
 body, header {
   border: 0;
@@ -30,11 +93,15 @@ body, header {
 h1 {
   text-align: center; }
 
-#parallax {
+#parallax, #parallax2 {
   background-image: url("https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg");
   background-attachment: fixed;
-  bakcground-position: center;
+  background-position: center;
   height: 40vh; }
+
+#parallax2 {
+  background-image: url("http://www.w3schools.com/css/trolltunga.jpg");
+  background-size: contain; }
 
 .container .side-bar {
   position: fixed;
@@ -42,21 +109,29 @@ h1 {
   left: 0;
   z-index: 100;
   visibility: hidden;
-  width: 300px;
+  width: 250px;
   transform: translate(-300px, 0px);
   height: 100%;
   background: #eee;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
 
-.open {
-  transform: translate(300px, 0px) !important; }
+div#fuck {
+  position: relative;
+  z-index: 10000;
+  cursor: pointer; }
 
 #main {
+  height: auto;
   position: relative;
   transform: translate(0px, 0px);
   transition: transform 0.6s;
   width: 100vw; }
+
+#dtd {
+  height: 100%;
+  width: auto;
+  margin-left: 10%; }
 
 .open2 {
   transform: translate(0px, 0px) !important;
@@ -67,14 +142,20 @@ h1 {
   padding: 10px;
   margin-bottom: 2px;
   text-align: left;
-  font-size: 19px;
+  font-size: 15px;
   color: black !important; }
+  .sidebar-nav li i {
+    margin-right: 5%; }
   .sidebar-nav li:hover {
     color: #eb8122;
-    background-color: #d1d2d4; }
+    background-color: rgba(209, 210, 212, 0.4); }
 
 .side-bar {
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100vh !important; }
+
+.container-fluid {
+  padding: 0 !important; }
 
 .sidebar-nav {
   padding: 0px;
@@ -83,7 +164,8 @@ h1 {
 .ext-link {
   position: fixed;
   bottom: 0;
-  right: 1%; }
+  right: 1%;
+  z-index: 10000; }
   .ext-link ul {
     display: block; }
     .ext-link ul li {
@@ -105,7 +187,8 @@ h1 {
   height: 60px;
   width: 60px;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 100000; }
 
 .register i {
   position: relative !important;
@@ -122,10 +205,10 @@ footer {
   left: 0;
   z-index: 100;
   visibility: hidden;
-  width: 300px;
+  width: 250px;
   transform: translate(-300px, 0px);
   height: auto;
-  background: #eee;
+  background: transparent;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
 
@@ -134,7 +217,7 @@ footer {
   padding: 0; }
 
 .open {
-  transform: translate(300px, 0px) !important; }
+  transform: translate(200px, 0px) !important; }
 
 #main {
   position: relative;
@@ -155,5 +238,125 @@ footer {
   bottom: 0;
   right: 0;
   left: 0; }
+
+#ray {
+  background: url("../../assets/images/background.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
+  width: auto; }
+
+.ray-container {
+  height: 100%;
+  width: auto;
+  margin-top: 100px; }
+
+.ray-body {
+  height: 30vh;
+  float: left; }
+  .ray-body img {
+    margin-top: -30px;
+    margin-left: 12%;
+    height: 40vh !important; }
+
+.ray-name img {
+  margin-top: 10%;
+  margin-left: 60%; }
+
+.ray-text {
+  color: white;
+  padding: 20px;
+  padding-left: 40%;
+  margin-left: 12%; }
+
+.about {
+  background: white; }
+
+.hero {
+  height: 100vh; }
+
+@media only screen and (max-width: 768px) {
+  #top-row {
+    margin-top: 15%; }
+
+  #main-logo {
+    width: auto;
+    height: 33vh; }
+
+  #dtd {
+    margin-left: 0px; }
+
+  .navbar-brand {
+    padding-top: 0px !important; }
+
+  .ray-text {
+    margin-left: 27%; } }
+@media only screen and (max-width: 500px) {
+  #main-logo {
+    height: 25vh; }
+
+  #dtd {
+    height: 15vh;
+    margin-left: -24%; }
+
+  .navbar .navbar-brand {
+    padding-top: 0px !important; }
+
+  #bars {
+    margin-left: 13px; }
+
+  .ray-container {
+    margin-top: 72px; }
+
+  .ray-body {
+    height: 27vh; }
+
+  .ray-body img {
+    margin-top: -66px;
+    margin-left: 16%;
+    height: 36vh !important; }
+
+  .ray-name img {
+    height: 15vh;
+    margin-top: 10%;
+    margin-left: 29%; }
+
+  .ray-text {
+    margin-left: -29%; } }
+@media only screen and (max-width: 390px) {
+  #main-logo {
+    height: 24vh;
+    margin-left: -8%; }
+
+  #dtd {
+    height: 13vh; }
+
+  .ray-body {
+    height: 24vh; }
+
+  .ray-body img {
+    height: 33vh !important;
+    margin-left: 13%; }
+
+  .ray-name img {
+    height: 12vh;
+    margin-left: 34%; } }
+@media only screen and (max-width: 320px) {
+  #main-logo {
+    height: 19vh; }
+
+  #dtd {
+    height: 10vh; }
+
+  #top-row {
+    margin-top: 36%; }
+
+  .ray-body img {
+    height: 32vh !important;
+    margin-left: 4%; }
+
+  .ray-name img {
+    margin-left: 30%; } }
 
 /*# sourceMappingURL=main.css.map */

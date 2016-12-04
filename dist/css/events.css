@@ -1,0 +1,99 @@
+#events {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  height: 100vh;
+  position: fixed;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000; }
+
+.dropdown {
+  float: left !important; }
+
+#detail-toggle {
+  float: right !important; }
+
+#myTabs {
+  margin-top: 10% !important;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.nav-tabs .active {
+  background-color: rgba(0, 0, 0, 0.25); }
+
+.video video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%); }
+
+.dropdown-menu {
+  background: rgba(255, 255, 255, 0.8) !important;
+  color: white; }
+
+#myTabContent {
+  max-height: 50vh;
+  overflow-y: auto; }
+
+::-webkit-scrollbar {
+  width: 4px; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px black;
+  background: black; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background: white; }
+
+#rules {
+  margin-bottom: 10%; }
+
+#footer-nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0; }
+
+.current-sport {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  float: left;
+  position: absolute;
+  top: 12%;
+  left: 7%;
+  padding-left: 42px;
+  padding-right: 42px;
+  z-index: 10000 !important; }
+
+#EventTypes {
+  position: fixed;
+  top: 13%;
+  background-color: transparent;
+  width: 80%;
+  overflow: hidden;
+  border: 0; }
+  #EventTypes li {
+    float: right; }
+
+#home, #profile {
+  height: 100vh;
+  overflow: hidden; }
+
+#myTabContent {
+  overflow: hidden; }
+
+/*# sourceMappingURL=events.css.map */
