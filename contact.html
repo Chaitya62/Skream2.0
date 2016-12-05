@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" /><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+	<title>Skream</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="dist/css/bootstrap-material-design.min.css" />
+	<link rel="stylesheet" href="dist/css/ripples.min.css" />
+	<link rel="stylesheet" href="dist/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="dist/css/simple-sidebar.css">
+
+	<style>
+      #map-container { 
+        height: 550px;
+        width: 770px; 
+        position: relative;
+        overflow: hidden;
+    }
+
+    #info{
+    	height: 550px;
+        width: 650px; 
+    }
+
+    #reg-ip{
+    	margin-bottom: 0px;
+    	margin-top: 10px;	
+    	color: black;
+    }
+    .md-form{
+  margin-left: 15px;
+}
+    </style>
+	
+</head>
+
+<body>
+
+	<header>
+	<!-- <nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	      	<img src="./assets/images/navbar_logo.png" alt="" class="img-re">
+	      </a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#">Home</a></li>
+	      <li><a href="#">Page 1</a></li>
+	      <li><a href="#">Page 2</a></li> 
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>
+	  </div>
+	</nav> -->
+		<nav class="navbar navbar-light bg-faded ">
+			
+		
+				<div class="container-fluid navbar-container">
+					
+				    <div class="navbar-header">
+						<div class="center"  id ="fuck" style="display:inline-block;float:left;">
+							<a  onclick="" id="fuck">
+							<i class="fa fa-bars fa-2x" id="bars"></i>
+						</a>
+						</div>
+					      <a class="navbar-brand" href="#">
+					      	<img src="./assets/images/navbar_logo.png" height="50" id="navbar-logo" alt="" class="">
+					      </a>
+				    </div>
+				    <div class="nav-current" style="">
+				    	<p>CONTACT</p>
+				    </div>
+				</div>
+		</nav>
+	
+	</header>
+	<hr />
+	<hr />
+	<div class="container" id="container">
+			
+        <div id="side-nav" class="side-bar">
+            <ul class="sidebar-nav">
+                <!-- <li class="sidebar-brand">
+                    <a href="#">
+                        Start Bootstrap
+                    </a>
+                </li> -->
+                <li>
+                    <a href="./index.html"><i class="fa fa-home fa-1x"></i> Home</a>
+                </li>
+                <li>
+                    <a href="./events.html"><i class="fa fa-soccer-ball-o fa-1x"></i> Events</a>
+                </li>
+                <li>
+                    <a href="./Rules.html"><i class="fa fa-map-o fa-1x"></i> Rules</a>
+                </li>
+                <li>
+                    <a href="./Accomodation.html"><i class="fa fa-briefcase fa-1x"></i> Accomodation</a>
+                </li>
+                <li>
+                    <a href="./registeration.html"><i class="fa fa-pencil-square fa-1x"></i> Registeration</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-product-hunt fa-1x"></i> Parvaah</a>
+                </li>
+                <li>
+                    <a href="./contact.html"><i class="fa fa-id-card-o fa-1x"></i> Contact</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+			<div class="main" id="main">
+				<div class="container-fluid" id="">
+
+								        <!--CONTACT SECTION BEGINS-->
+
+
+
+<!--Section: Contact v.1-->
+<section class="section mb-4">
+
+    <div class="row">
+
+        <!--First column-->
+        <div class="col-md-5">
+
+            <!--Form with header-->
+            <div class="card">
+
+                <div class="card-block">
+                    <!--Header-->
+                    <div class="form-header mdb-color">
+                        <h3 style="margin-left: 10px;"><i class="fa fa-envelope"></i> Registrations</h3>
+                    </div>
+                    <br>
+
+                   <!--Body-->
+                   <div class="md-form">
+                   		<i class="fa fa-user prefix"></i>
+                        <label for="form3"><p id="reg-ip">Name</p></label>
+                        <input type="text" id="form3" class="form-control">
+                        </div>
+
+                    <div class="md-form">
+                    	<i class="fa fa-building-o"></i>
+                        <label for="form2"><p id="reg-ip">Name Of College</p></label>
+                        <input type="text" id="form2" class="form-control">
+                    </div>
+
+                    <div class="md-form">
+                    	<i class="fa fa-envelope"></i>
+                        <label for="form32"><p id="reg-ip">E-mail id</p></label>
+                        <input type="text" id="form32" class="form-control">
+                    </div>
+                    
+                    <div class="md-form">
+                    	<i class="fa fa-phone"></i>
+                        <label for="form32"><p id="reg-ip">Phone number</p></label>
+                        <input type="text" id="form32" class="form-control">
+                    </div>
+
+                    <div class="md-form">
+                    	<i class="fa fa-user prefix"></i>
+                        <label for="form32"><p id="reg-ip">GENDER</p></label><br>
+                        <input type="radio" name="gender" value="male" style="color:orange;">MALE<br>
+                        <input type="radio" name="gender" value="female">FEMALE
+                    </div>
+
+                    <div class="md-form">
+                    <i class="fa fa-futbol-o"></i>
+                        <label for="form32"><p id="reg-ip">SPORTS INTERSTED IN :</p></label><br>
+                        <input type="checkbox" name="sports" value="basketball(m)">
+                        BASKETBALL(M)<br>
+                        <input type="checkbox" name="sports" value="basketball(f)">
+                        BASKETBALL(F)<br>
+                         <input type="checkbox" name="sports" value="basketball(m)">
+                        FOOTBALL(M)<br>
+                        <input type="checkbox" name="sports" value="basketball(f)">
+                        FOOTBALL(F)<br>
+                         <input type="checkbox" name="sports" value="basketball(m)">
+                        SQUASH(M)<br>
+                        <input type="checkbox" name="sports" value="basketball(f)">
+                        SQUASH(F)<br>
+                         <input type="checkbox" name="sports" value="basketball(m)">
+                        TABLE_TENNIS(M)<br>
+                        <input type="checkbox" name="sports" value="basketball(f)">
+                        TABLE-TENNIS(F)<br>
+                         <input type="checkbox" name="sports" value="basketball(m)">
+                        BADMINTON(M)<br>
+                        <input type="checkbox" name="sports" value="basketball(f)">
+                        BADMINTON(F)<br>
+                         <input type="checkbox" name="sports" value="basketball(m)">
+                        ATHLETICS<br>
+                        <input type="checkbox" name="sports" value="basketball(f)">
+                        CRICKET(M)<br>
+                         <input type="checkbox" name="sports" value="basketball(m)">
+                        RINK FOOTBALL(M)<br>
+                        <input type="checkbox" name="sports" value="basketball(f)">
+                        BOX CRICKET(M)<br>
+                         <input type="checkbox" name="sports" value="basketball(m)">
+                        CHESS(M)<br>
+                        <input type="checkbox" name="sports" value="basketball(f)">
+                        CHESS(F)<br>
+                         <input type="checkbox" name="sports" value="basketball(m)">
+                        CARROM(M)<br>
+                        <input type="checkbox" name="sports" value="basketball(f)">
+                        CARROM(F)<br>
+                         <input type="checkbox" name="sports" value="basketball(m)">
+                        VOLLEYBALL(M)<br>
+                        <input type="checkbox" name="sports" value="basketball(f)">
+                        VOLLEYBALL(F)<br>
+                         <input type="checkbox" name="sports" value="basketball(m)">
+                        LAWN TENNIS(M)<br>
+                        <input type="checkbox" name="sports" value="basketball(f)">
+                        LAWN TENNIS(F)<br>
+                    </div>
+
+                    <div class="text-xs-center">
+                        <button id="submit" class="btn btn" type="submit">Submit</button>
+                    </div>
+                   
+
+                </div>
+
+            </div>
+            <!--/Form with header-->
+
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-7">
+
+            <!--Google map-->
+            <div id="map-container" class="z-depth-1-half map-container"></div>
+
+            <br>
+            <!--Buttons-->
+            <div class="container" id="info">
+            	<h1>KJSCE Student's Council 16-17</h1>
+            	<div class="col-md-5"></div>
+            	<div class="col-md-7">
+            		A020,Ground Floor,<br>
+            		K.J.Somaiya College Of Engineering<br>
+            		Vidyavihar, Mumbai - 400 077.<br>
+
+            		Public Relation Officer<br>
+            		Srijita Paul : 8291289089<br>
+            		Marketing Secratary<br>
+            		Isha Bandi : 9619047970
+            	</div>
+            </div>
+
+
+
+    </div>
+
+</section>
+</div>
+</div>
+	
+	<div class="ext-link">
+		<ul>
+			<li><a href="#">Teaser</a></li>
+			<li><a href="#">Gallery</a></li>
+		</ul>
+	</div>
+	<div class="register center">
+		<i class="fa fa-pencil fa-2x"></i>
+	</div>
+	<hr />
+	<footer class="footer">
+		<div class="container">
+			<p class="text-muted">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quod, corporis? Officiis nostrum eos blanditiis vero obcaecati culpa beatae. Blanditiis laboriosam voluptatem nesciunt suscipit sint quos asperiores doloremque, voluptates eaque!
+			</p>
+		</div>
+	</footer>
+
+<script src="dist/js/jquery.js"></script>
+<script src="dist/js/material.min.js"></script>
+<script src="dist/js/ripples.min.js"></script>
+<script src="dist/js/index.js"></script>
+
+<!--contact--><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="" src="js/map.js"></script>
+<script type="" src="js/register.js"></script>
+<script type="text/javascript" src="map1.js"></script>
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="dist/js/phno.js"></script>
+<script >
+
+// function ToggleNav(){
+// 	$('#container').toggleClass("open1");
+// $('#main').toggleClass("open");
+// 	$('.side-bar').toggleClass("open2");
+// 	//flag = (flag==1 ? 0 : 1);
+	
+// }
+
+// $('#fuck').on('click',function(){
+// 		ToggleNav();	
+// });
+
+
+
+// $("#menu-toggle").click(function(e) {
+//         e.preventDefault();
+//         $("#wrapper").toggleClass("toggled");
+//     });
+
+
+
+	
+</script>
+</body>
+</html>
