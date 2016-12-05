@@ -5,6 +5,7 @@ var NavbarHandler = {
 		init: function() {
 			this.cacheDom();
 			this.eventBind();
+
 		},
 		cacheDom:function(){
 
@@ -33,8 +34,13 @@ var NavbarHandler = {
 		fullscreen: function(){
 			this.window.scrollTo(0,0);
 		},
+		preventDefaults: function(e){
+			e.preventDefault();
+
+		},
 		eventBind:function(){
 			this.window.on('load',fullscreen);
+			document.addEventListener("touchmove",preventDefaults);
 			this.toggleButton.on("click",this.toggleNav.bind(this));
 			this.window.on("orientationchange resize",calcVH);
 		}
