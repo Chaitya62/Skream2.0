@@ -5,6 +5,7 @@ var NavbarHandler = {
 		init: function() {
 			this.cacheDom();
 			this.eventBind();
+			this.fullscreen();
 
 		},
 		cacheDom:function(){
@@ -37,6 +38,18 @@ var NavbarHandler = {
 		preventDefaults: function(e){
 			e.preventDefault();
 
+		},
+		FullScreen: function(){
+			var body = document.documentElement;
+			if (body.requestFullscreen) {
+			  body.requestFullscreen();
+			} else if (body.webkitrequestFullscreen) {
+			  body.webkitrequestFullscreen();
+			} else if (body.mozrequestFullscreen) {
+			  body.mozrequestFullscreen();
+			} else if (body.msrequestFullscreen) {
+			  body.msrequestFullscreen();
+			}
 		},
 		eventBind:function(){
 			this.window.on("load",fullscreen);
