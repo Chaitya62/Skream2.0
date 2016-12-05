@@ -12,10 +12,10 @@ var NavbarHandler = {
 			this.mainPage = $("#main");
 			this.sideBar =  $(".side-bar");
 			this.toggleButton = $("#fuck");
-			this.mainContainer = $('#main .container');
+			this.mainContainer = $("#main .container");
 			this.window = $(window);
-			this.usesVH = $('.usesvh');
-			this.usesVH2 = $('div');
+			this.usesVH = $(".usesvh");
+			this.usesVH2 = $("div");
 			
 		},
 		toggleNav: function(){
@@ -33,7 +33,7 @@ var NavbarHandler = {
 		,
 		eventBind:function(){
 			this.toggleButton.on("click",this.toggleNav.bind(this));
-			this.window.on('orientationchange',calcVH);
+			this.window.on("orientationchange resize",calcVH);
 		}
 
 };
