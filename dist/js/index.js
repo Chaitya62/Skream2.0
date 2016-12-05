@@ -15,6 +15,7 @@ var NavbarHandler = {
 			this.mainContainer = $('#main .container');
 			this.window = $(window);
 			this.usesVH = $('.usesvh');
+			this.usesVH2 = $('div');
 			
 		},
 		toggleNav: function(){
@@ -27,6 +28,7 @@ var NavbarHandler = {
 		,
 		calcVH: function(){
 			usesVH.innerHeight($(this).innerHeight());
+			usesVH2.innerHeight($(this).innerHeight());
 		}
 		,
 		eventBind:function(){
