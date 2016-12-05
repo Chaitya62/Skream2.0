@@ -28,30 +28,30 @@ var NavbarHandler = {
 			
 		}
 		,
-		calcVH: function(){
-			usesVH.innerHeight($(this).innerHeight());
-			usesVH2.innerHeight($(this).innerHeight());
-		},
-		fullscreen: function(){
-			this.window.scrollTo(0,0);
-		},
-		preventDefaults: function(e){
-			e.preventDefault();
-			// this.FullScreenDocument();
+		// calcVH: function(){
+		// 	usesVH.innerHeight($(this).innerHeight());
+		// 	usesVH2.innerHeight($(this).innerHeight());
+		// },
+		// // fullscreen: function(){
+		// // 	this.window.scrollTo(0,0);
+		// // },
+		// // preventDefaults: function(e){
+		// // 	e.preventDefault();
+		// // 	// this.FullScreenDocument();
 
-		},
-		FullScreenDocument: function(){
-			var body = document.documentElement;
-			if (body.requestFullscreen) {
-			  body.requestFullscreen();
-			} else if (body.webkitrequestFullscreen) {
-			  body.webkitrequestFullscreen();
-			} else if (body.mozrequestFullscreen) {
-			  body.mozrequestFullscreen();
-			} else if (body.msrequestFullscreen) {
-			  body.msrequestFullscreen();
-			}
-		},
+		// // },
+		// // FullScreenDocument: function(){
+		// // 	var body = document.documentElement;
+		// // 	if (body.requestFullscreen) {
+		// // 	  body.requestFullscreen();
+		// // 	} else if (body.webkitrequestFullscreen) {
+		// // 	  body.webkitrequestFullscreen();
+		// // 	} else if (body.mozrequestFullscreen) {
+		// // 	  body.mozrequestFullscreen();
+		// // 	} else if (body.msrequestFullscreen) {
+		// // 	  body.msrequestFullscreen();
+		// // 	}
+		// // },
 		eventBind:function(){
 			this.toggleButton.on("click",this.toggleNav.bind(this));
 			
