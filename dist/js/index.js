@@ -54,7 +54,7 @@ var NavbarHandler = {
 		},
 		eventBind:function(){
 			this.toggleButton.on("click",this.toggleNav.bind(this));
-			this.window.on("orientationchange resize",this.calcVH.bind(this));
+			
 		}
 
 };
