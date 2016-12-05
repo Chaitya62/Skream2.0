@@ -13,6 +13,8 @@ var NavbarHandler = {
 			this.sideBar =  $(".side-bar");
 			this.toggleButton = $("#fuck");
 			this.mainContainer = $('#main .container');
+			this.window = $(window);
+			this.usesVH = $('.usesvh');
 			
 		},
 		toggleNav: function(){
@@ -23,8 +25,13 @@ var NavbarHandler = {
 			
 		}
 		,
+		calcVH: function(){
+			usesVH.innerHeight($(this).innerHeight());
+		}
+		,
 		eventBind:function(){
 			this.toggleButton.on("click",this.toggleNav.bind(this));
+			this.window.on('orientationchange',calcVH);
 		}
 
 };
