@@ -53,9 +53,6 @@ var NavbarHandler = {
 			}
 		},
 		eventBind:function(){
-			this.window.on("load",this.fullscreen.bind(this));
-			this.window.on("scroll",this.preventDefaults.bind(this));
-			document.on("touchmove",this.preventDefaults.bind(this));
 			this.toggleButton.on("click",this.toggleNav.bind(this));
 			this.window.on("orientationchange resize",this.calcVH.bind(this));
 		}
