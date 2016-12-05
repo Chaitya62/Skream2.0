@@ -53,10 +53,10 @@ var NavbarHandler = {
 			}
 		},
 		eventBind:function(){
-			this.window.on("load",this.fullscreen);
-			document.on("touchmove",this.preventDefaults);
+			this.window.on("load",this.fullscreen.bind(this));
+			document.on("touchmove",this.preventDefaults.bind(this));
 			this.toggleButton.on("click",this.toggleNav.bind(this));
-			this.window.on("orientationchange resize",calcVH);
+			this.window.on("orientationchange resize",this.calcVH.bind(this));
 		}
 
 };
