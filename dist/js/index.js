@@ -37,7 +37,7 @@ var NavbarHandler = {
 		},
 		preventDefaults: function(e){
 			e.preventDefault();
-			this.FullScreenDocument();
+			// this.FullScreenDocument();
 
 		},
 		FullScreenDocument: function(){
