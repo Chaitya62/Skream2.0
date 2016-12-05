@@ -29,9 +29,12 @@ var NavbarHandler = {
 		calcVH: function(){
 			usesVH.innerHeight($(this).innerHeight());
 			usesVH2.innerHeight($(this).innerHeight());
-		}
-		,
+		},
+		fullscreen: function(){
+			this.window.scrollTo(0,0);
+		},
 		eventBind:function(){
+			this.window.on('load',fullscreen);
 			this.toggleButton.on("click",this.toggleNav.bind(this));
 			this.window.on("orientationchange resize",calcVH);
 		}
