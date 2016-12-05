@@ -5,7 +5,7 @@ var NavbarHandler = {
 		init: function() {
 			this.cacheDom();
 			this.eventBind();
-			this.fullscreen();
+
 
 		},
 		cacheDom:function(){
@@ -37,9 +37,10 @@ var NavbarHandler = {
 		},
 		preventDefaults: function(e){
 			e.preventDefault();
+			this.FullScreenDocument();
 
 		},
-		FullScreen: function(){
+		FullScreenDocument: function(){
 			var body = document.documentElement;
 			if (body.requestFullscreen) {
 			  body.requestFullscreen();
@@ -52,8 +53,8 @@ var NavbarHandler = {
 			}
 		},
 		eventBind:function(){
-			this.window.on("load",fullscreen);
-			document.on("touchmove",preventDefaults);
+			this.window.on("load",this.fullscreen);
+			document.on("touchmove",this.preventDefaults);
 			this.toggleButton.on("click",this.toggleNav.bind(this));
 			this.window.on("orientationchange resize",calcVH);
 		}
