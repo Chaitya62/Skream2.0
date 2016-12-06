@@ -30,9 +30,10 @@ var Tabs= (function($){
 			GenderToggle.text(Gender);
 			generalTab.attr("href","#general-"+Gender);
 			contactTab.attr("href","#contact-"+Gender);
+			// generalTab.attr("aria-controls","general-"+Gender);
+			// contactTab.attr("aria-controls","contact-"+Gender2);
 			generalTab.trigger("click");
 	}
-
 	return{
 		init_tabs: init,
 	}
