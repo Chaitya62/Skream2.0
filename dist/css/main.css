@@ -298,7 +298,21 @@ footer {
   .ray-text {
     margin-right: -17%;
     margin-left: 33%; } }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 2640px) {
+  #main-logo {
+    margin-left: -5%;
+    margin-top: 4%; }
+
+  .ray-name {
+    margin-top: 0%; }
+
+  .ray-body img {
+    margin-left: -39%;
+    margin-top: 0%; } }
+@media only screen and (max-width: 1400px) {
+  #main-logo {
+    margin-left: -20%; } }
+@media only screen and (max-width: 1400px) {
   #main-logo {
     margin-left: 2%;
     margin-top: 1%; }
