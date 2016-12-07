@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" /><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
   <meta name="format-detection" content="telephone=no">
-	<title>Skream</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="dist/css/bootstrap-material-design.min.css" />
-	<link rel="stylesheet" href="dist/css/ripples.min.css" />
-	<link rel="stylesheet" href="dist/css/main.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="dist/css/simple-sidebar.css">
+    <title>Skream</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-material-design.min.css" />
+    <link rel="stylesheet" href="dist/css/ripples.min.css" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="dist/css/simple-sidebar.css">
 
-	<style>
+    <style>
+        @media only screen and (max-width: 720px)
+        {
+            #stuco{
+                width: 300px;
+                height: auto;
+                padding-left: 15px;
+            }
+        }
+
       #map-container { 
         margin: 30px;
         height: 550px;
@@ -23,14 +32,14 @@
     }
 
     #info{
-    	width:     530px;
+        width:     530px;
         height:     auto;   
     }
 
     #reg-ip{
-    	margin-bottom: 0px;
-    	margin-top: 10px;	
-    	color: black;
+        margin-bottom: 0px;
+        margin-top: 10px;   
+        color: black;
         font-size:  25px;
     }
     .md-form{
@@ -58,56 +67,56 @@
 }
 
     </style>
-	
+    
 </head>
 
 <body>
 
-	<header>
-	<!-- <nav class="navbar navbar-inverse">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#">
-	      	<img src="./assets/images/navbar_logo.png" alt="" class="img-re">
-	      </a>
-	    </div>
-	    <ul class="nav navbar-nav">
-	      <li class="active"><a href="#">Home</a></li>
-	      <li><a href="#">Page 1</a></li>
-	      <li><a href="#">Page 2</a></li> 
-	    </ul>
-	    <ul class="nav navbar-nav navbar-right">
-	      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-	      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-	    </ul>
-	  </div>
-	</nav> -->
-		<nav class="navbar navbar-light bg-faded ">
-			
-		
-				<div class="container-fluid navbar-container">
-					
-				    <div class="navbar-header">
-						<div class="center"  id ="fuck" style="display:inline-block;float:left;">
-							<a  onclick="" id="fuck">
-							<i class="fa fa-bars fa-2x" id="bars"></i>
-						</a>
-						</div>
-					      <a class="navbar-brand" href="#">
-					      	<img src="./assets/images/navbar_logo.png" height="50" id="navbar-logo" alt="" class="">
-					      </a>
-				    </div>
-				    <div class="nav-current" style="">
-				    	<p>CONTACT</p>
-				    </div>
-				</div>
-		</nav>
-	
-	</header>
-	<hr />
-	<hr />
-	<div class="container" id="container">
-			
+    <header>
+    <!-- <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/navbar_logo.png" alt="" class="img-re">
+          </a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li> 
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </nav> -->
+        <nav class="navbar navbar-light bg-faded ">
+            
+        
+                <div class="container-fluid navbar-container">
+                    
+                    <div class="navbar-header">
+                        <div class="center"  id ="fuck" style="display:inline-block;float:left;">
+                            <a  onclick="" id="fuck">
+                            <i class="fa fa-bars fa-2x" id="bars"></i>
+                        </a>
+                        </div>
+                          <a class="navbar-brand" href="#">
+                            <img src="./assets/images/navbar_logo.png" height="50" id="navbar-logo" alt="" class="">
+                          </a>
+                    </div>
+                    <div class="nav-current" style="">
+                        <p>CONTACT</p>
+                    </div>
+                </div>
+        </nav>
+    
+    </header>
+    <hr />
+    <hr />
+    <div class="container" id="container">
+            
         <div id="side-nav" class="side-bar">
             <ul class="sidebar-nav">
                 <!-- <li class="sidebar-brand">
@@ -131,12 +140,8 @@
                     <a href="./registeration.html"><i class="fa fa-pencil-square fa-1x"></i> Registeration</a>
                 </li>
                 <li>
-                    <a href="./parvaah.html"><i class="fa fa-product-hunt fa-1x"></i> Parvaah</a>
+                    <a href="#"><i class="fa fa-product-hunt fa-1x"></i> Parvaah</a>
                 </li>
-                <li>
-                    <a href="./sponsor.html"><i class="fa fa-product-hunt fa-1x"></i> Sponsor</a>
-                </li>
-
                 <li>
                     <a href="./contact.html"><i class="fa fa-id-card-o fa-1x"></i> Contact</a>
                 </li>
@@ -145,10 +150,10 @@
         </div>
     </div>
 
-			<div class="main" id="main">
-				<div class="container-fluid" id="">
+            <div class="main" id="main">
+                <div class="container-fluid" id="">
 
-								        <!--CONTACT SECTION BEGINS-->
+                                        <!--CONTACT SECTION BEGINS-->
 
 
 
@@ -210,45 +215,45 @@
                         BASKETBALL(M)<br>
                         <input type="checkbox" name="sports" id="sports" value="basketball(f)">
                         BASKETBALL(F)<br>
-                         <input type="checkbox" name="sports" id="sports" value="basketball(m)">
+                         <input type="checkbox" name="sports" id="sports" value="football(m)">
                         FOOTBALL(M)<br>
-                        <input type="checkbox" name="sports"  id="sports" value="basketball(f)">
+                        <input type="checkbox" name="sports"  id="sports" value="football(f)">
                         FOOTBALL(F)<br>
-                         <input type="checkbox" name="sports" id="sports" value="basketball(m)">
+                         <input type="checkbox" name="sports" id="sports" value="squash(m)">
                         SQUASH(M)<br>
                         <input type="checkbox" name="sports" id="sports" value="squash(f)">
                         SQUASH(F)<br>
-                         <input type="checkbox" name="sports" id="sports" value="basketball(m)">
+                         <input type="checkbox" name="sports" id="sports" value="table_tennis(m)">
                         TABLE_TENNIS(M)<br>
-                        <input type="checkbox" name="sports" id="sports" value="basketball(f)">
+                        <input type="checkbox" name="sports" id="sports" value="table_tennis(f)">
                         TABLE-TENNIS(F)<br>
-                         <input type="checkbox" name="sports" id="sports" value="basketball(m)">
+                         <input type="checkbox" name="sports" id="sports" value="badminton(m)">
                         BADMINTON(M)<br>
-                        <input type="checkbox" name="sports" id="sports" value="basketball(f)">
+                        <input type="checkbox" name="sports" id="sports" value="badminton(f)">
                         BADMINTON(F)<br>
-                         <input type="checkbox" name="sports" id="sports" value="basketball(m)">
+                         <input type="checkbox" name="sports" id="sports" value="athletics">
                         ATHLETICS<br>
-                        <input type="checkbox" name="sports" id="sports" value="basketball(f)">
+                        <input type="checkbox" name="sports" id="sports" value="cricket(m)">
                         CRICKET(M)<br>
-                         <input type="checkbox" name="sports" id="sports" value="basketball(m)">
+                         <input type="checkbox" name="sports" id="sports" value="rink football(m)">
                         RINK FOOTBALL(M)<br>
-                        <input type="checkbox" name="sports" id="sports" value="basketball(f)">
+                        <input type="checkbox" name="sports" id="sports" value="box cricket(m)">
                         BOX CRICKET(M)<br>
-                         <input type="checkbox" name="sports" id="sports" value="basketball(m)">
+                         <input type="checkbox" name="sports" id="sports" value="chess(m)">
                         CHESS(M)<br>
-                        <input type="checkbox" name="sports" id="sports" value="basketball(f)">
+                        <input type="checkbox" name="sports" id="sports" value="chess(f)">
                         CHESS(F)<br>
-                         <input type="checkbox" name="sports" id="sports" value="basketball(m)">
+                         <input type="checkbox" name="sports" id="sports" value="carrom(m)">
                         CARROM(M)<br>
-                        <input type="checkbox" name="sports" id="sports" value="basketball(f)">
+                        <input type="checkbox" name="sports" id="sports" value="carrom(f)">
                         CARROM(F)<br>
-                         <input type="checkbox" name="sports" id="sports" value="basketball(m)">
+                         <input type="checkbox" name="sports" id="sports" value="volleyball(m)">
                         VOLLEYBALL(M)<br>
-                        <input type="checkbox" name="sports" id="sports" value="basketball(f)">
+                        <input type="checkbox" name="sports" id="sports" value="volleyball(f)">
                         VOLLEYBALL(F)<br>
-                         <input type="checkbox" name="sports" id="sports" value="basketball(m)">
+                         <input type="checkbox" name="sports" id="sports" value="lawn tennis(m)">
                         LAWN TENNIS(M)<br>
-                        <input type="checkbox" name="sports" id="sports"  value="basketball(f)">
+                        <input type="checkbox" name="sports" id="sports"  value="lawn tennis(f)">
                         LAWN TENNIS(F)<br>
                     </div>
 
@@ -275,7 +280,7 @@
             <br>
             <!--Buttons-->
             
-            	<img src="assets/images/contact.svg" height="300">
+                <img src="assets/images/contact.svg" height="300" id="stuco">
             
                  
             
@@ -283,24 +288,24 @@
 </section>
 </div>
 </div>
-	
-	<div class="ext-link">
-		<ul>
-			<li><a href="#">Teaser</a></li>
-			<li><a href="./gallery.html">Gallery</a></li>
-		</ul>
-	</div>
-	<div class="register center">
-		<i class="fa fa-pencil fa-2x"></i>
-	</div>
-	<hr />
-	<footer class="footer">
-		<div class="container">
-			<p class="text-muted">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quod, corporis? Officiis nostrum eos blanditiis vero obcaecati culpa beatae. Blanditiis laboriosam voluptatem nesciunt suscipit sint quos asperiores doloremque, voluptates eaque!
-			</p>
-		</div>
-	</footer>
+    
+    <div class="ext-link">
+        <ul>
+            <li><a href="#">Teaser</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </div>
+    <div class="register center">
+        <i class="fa fa-pencil fa-2x"></i>
+    </div>
+    <hr />
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quod, corporis? Officiis nostrum eos blanditiis vero obcaecati culpa beatae. Blanditiis laboriosam voluptatem nesciunt suscipit sint quos asperiores doloremque, voluptates eaque!
+            </p>
+        </div>
+    </footer>
 
 <script src="dist/js/jquery.js"></script>
 <script src="dist/js/material.min.js"></script>
@@ -308,7 +313,7 @@
 <script src="dist/js/index.js"></script>
 
 <!--contact--><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="" src="./dist/js/map.js"></script>
@@ -321,15 +326,15 @@
 <script >
 
 // function ToggleNav(){
-// 	$('#container').toggleClass("open1");
+//  $('#container').toggleClass("open1");
 // $('#main').toggleClass("open");
-// 	$('.side-bar').toggleClass("open2");
-// 	//flag = (flag==1 ? 0 : 1);
-	
+//  $('.side-bar').toggleClass("open2");
+//  //flag = (flag==1 ? 0 : 1);
+    
 // }
 
 // $('#fuck').on('click',function(){
-// 		ToggleNav();	
+//      ToggleNav();    
 // });
 
 
@@ -341,7 +346,7 @@
 
 
 
-	
+    
 </script>
 </body>
 </html>

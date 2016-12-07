@@ -27,6 +27,7 @@ var Tabs= (function($){
 		contactTab = $("#contact-tab");
 	}
 	function genderHandler(e){
+			console.log("Fuckshits");
 			var Gender = e.currentTarget.text;
 			GenderToggle.text(Gender);
 			generalTab.attr("href","#general-"+Gender);
