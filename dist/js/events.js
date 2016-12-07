@@ -2,6 +2,7 @@ var Tabs= (function($){
 	
 	var GenderToggle;
 	var Girls;
+	var ItemActive;
 	var Boys;
 	var DropDownArrow = "<span class=\"caret\"></span>";
 	var generalTab;
@@ -17,6 +18,13 @@ var Tabs= (function($){
 	function bindHandlers(){
 		Boys.on("click",genderHandler);
 		Girls.on("click",genderHandler);
+		$(".main").on("click",ItemHandler);
+	}
+	function ItemHandler(){
+		$('.item .active').on("click",function(e){
+				console.log(e.currentTarget);
+		});
+		
 	}
 
 	function cacheDom(){
@@ -24,6 +32,7 @@ var Tabs= (function($){
 		Boys = $("#Gender1");
 		Girls = $("#Gender2");
 		generalTab = $("#general-tab");
+		ItemActive = $(".item .active");
 		contactTab = $("#contact-tab");
 	}
 	function genderHandler(e){
