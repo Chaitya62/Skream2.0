@@ -17,10 +17,11 @@ var Register = (function($){
 
 
 		function init(){
-			$('#myForm').validator();
+			
 			cacheDOM();
+			if($('#myForm').validator()){
 			submitButton.on('click',getValues);
-		
+			}
 			
 		}
 		function cacheDOM(){
