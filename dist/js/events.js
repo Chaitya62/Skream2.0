@@ -22,27 +22,37 @@ var Tabs= (function($){
 	}
 	function ItemHandler(){
 		$('.item .active').on("click",function(e){
-				console.log(e.currentTarget);
+				$(e).find('.dropdown');
+
 		});
 		
 	}
 
 	function cacheDom(){
-		GenderToggle = $("#Gender i");
-		Boys = $("#Gender1");
-		Girls = $("#Gender2");
-		generalTab = $("#general-tab");
+		GenderToggle = $("#gen1 i");
+		Boys = $(".Gender1");
+		Girls = $(".Gender2");
+		generalTab = $("#general1-tab");
 		ItemActive = $(".item .active");
 		contactTab = $("#contact-tab");
 	}
+	function ChangeVaribles(d){
+		GenderToggle = $("#gen"+ d +" i");
+		generalTab = $("#general"+d + "-tab");
+		contactTab = $("#contact"+d +"-tab");
+	}
+
+
 	function genderHandler(e){
 			console.log("Fuckshits");
+			var currentSportnumber = e.currentTarget.attributes.data.value;
 			var Gender = e.currentTarget.text;
+			ChangeVaribles(currentSportnumber);
+			
 			GenderToggle.text(Gender);
-			generalTab.attr("href","#general-"+Gender);
-			contactTab.attr("href","#contact-"+Gender);
-			// generalTab.attr("aria-controls","general-"+Gender);
-			// contactTab.attr("aria-controls","contact-"+Gender2);
+
+			generalTab.attr("href","#general"+ currentSportnumber +"-"+Gender);
+			contactTab.attr("href","#contact"+ currentSportnumber +"-"+Gender);
 			setTimeout(function(){
 				generalTab.trigger("click");
 			},500);
