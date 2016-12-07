@@ -133,7 +133,7 @@ div#fuck {
   width: auto;
   margin-left: 10%; }
 
-.open2 {
+.openbar2 {
   transform: translate(0px, 0px) !important;
   visibility: visible !important; }
 
@@ -216,7 +216,7 @@ footer {
   margin: 0;
   padding: 0; }
 
-.open {
+.openbar {
   transform: translate(200px, 0px) !important; }
 
 #main {
@@ -229,7 +229,7 @@ footer {
   height: 200vh;
   overflow-y: scroll; }
 
-.open2 {
+.openbar2 {
   transform: translate(0px, 0px) !important;
   visibility: visible !important; }
 

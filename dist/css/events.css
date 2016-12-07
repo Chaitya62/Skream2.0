@@ -40,8 +40,9 @@
   color: white; }
 
 #myTabContent {
-  max-height: 50vh;
-  overflow-y: auto; }
+  max-height: 15vh;
+  overflow-y: auto;
+  min-height: 15vh; }
 
 ::-webkit-scrollbar {
   width: 4px; }

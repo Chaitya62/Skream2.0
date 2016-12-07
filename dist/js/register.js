@@ -19,7 +19,7 @@ var Register = (function($){
 		function init(){
 			$('#myForm').validator();
 			cacheDOM();
-			submitButton.validator().on('click',getValues);
+			submitButton.on('click',getValues);
 		
 			
 		}

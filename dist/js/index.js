@@ -22,9 +22,9 @@ var NavbarHandler = {
 		},
 		toggleNav: function(){
 			console.log("helloWorld");
-			this.container.toggleClass("open1");
-			this.mainPage.toggleClass("open");
-			this.sideBar.toggleClass("open2");
+			this.container.toggleClass("openbar1");
+			this.mainPage.toggleClass("openbar");
+			this.sideBar.toggleClass("openbar2");
 			
 		}
 		,
