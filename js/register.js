@@ -17,9 +17,9 @@ var Register = (function($){
 
 
 		function init(){
-			$('#myForm').validator();
+			$('#myForm').validator()
 			cacheDOM();
-			submitButton.validator().on('click',getValues);
+			submitButton.on('click',getValues);
 		
 			
 		}
@@ -46,7 +46,6 @@ var Register = (function($){
 			consoleout();
 			packData(); //packing data
 			makePostRequest(); //making post request
-			alert("Your Response is Recorded");
 			
 		}
 		function consoleout(){
@@ -58,19 +57,14 @@ var Register = (function($){
 			console.log(sports); 
 			
 		}
-		function packData(){
-			console.log("Here");
+		function	packData(){
 			data = {
 				"entry.2005620554" : name,
 				"entry.1045781291" : email,
 				"entry.1065046570" : college,
 				"entry.1166974658" : phone,
 				"entry.839337160": "",//comments
-				"entry.1173486410": "BasketBall",
-				"entry.1173486410": "Tennis",
-				"entry.1173486410": "chess",
-			
-	
+
 			}
 			return;
 

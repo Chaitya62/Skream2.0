@@ -114,7 +114,7 @@
                     <a href="./Rules.html"><i class="fa fa-map-o fa-1x"></i> Rules</a>
                 </li>
                 <li>
-                    <a href="./Accomodation.html"><i class="fa fa-briefcase fa-1x"></i> Accomodation</a>
+                    <a href="./Accomodation.html"><i class="fa fa-briefcase fa-1x"></i> Accommodation</a>
                 </li>
                 <li>
                     <a href="./registeration.html"><i class="fa fa-pencil-square fa-1x"></i> Registeration</a>
@@ -146,7 +146,8 @@
         <div class="col-md-4" style="  margin-top:40px;"  >
 
             <!--Form with header-->
-            <div class="card">
+           <form action="" id="myForm" role="form" data-toggle="validator">
+                <div class="card">
 
                 <div class="card-block">
                     <!--Header-->
@@ -157,31 +158,31 @@
 
                    <!--Body-->
                    <div class="md-form">
-                   		<p id="reg-ip"><i class="fa fa-user prefix"></i>
+                        <p id="reg-ip"><i class="fa fa-user prefix"></i>
                         Name</p>
-                        <input type="text" id="name" class="form-control">
+                        <input type="name" id="name" class="form-control" required>
                         </div>
 
                     <div class="md-form">
-                    	<p id="reg-ip"><i class="fa fa-building-o"></i>
+                        <p id="reg-ip"><i class="fa fa-building-o"></i>
                         Name Of College</p>
-                        <input type="text" id="college" class="form-control">
+                        <input type="text" id="college" class="form-control" required>
                     </div>
 
                     <div class="md-form">
-                    	<p id="reg-ip"><i class="fa fa-envelope"></i>
+                        <p id="reg-ip"><i class="fa fa-envelope"></i>
                         E-mail id</p>
-                        <input type="text" id="email" class="form-control">
+                        <input type="email" id="email" class="form-control" required>
                     </div>
                     
                     <div class="md-form">
             <p id="reg-ip"><i class="fa fa-phone"></i>
                         Phone number</p>
-                        <input type="text" id="phone" class="form-control">
+                        <input type="number" id="phone" class="form-control" required>
                     </div>
 
                     <div class="md-form">
-                    	<p id="reg-ip"><i class="fa fa-user prefix"></i>
+                        <p id="reg-ip"><i class="fa fa-user prefix"></i>
                         GENDER</p><br>
                         <input type="radio" name="gender" id="gender" value="male" style="color:orange;">MALE<br>
                         <input type="radio" name="gender" id="gender" value="female">FEMALE
@@ -244,6 +245,7 @@
                 </div>
 
             </div>
+           </form>
             <!--/Form with header-->
 
         </div>
@@ -316,7 +318,9 @@
      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="" src="./dist/js/map.js"></script>
+<script type="" src="./dist/js/validator.js"></script>
 <script type="" src="./dist/js/register.js"></script>
+
 <!-- <script type="text/javascript" src="map1.js"></script> -->
 <script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- <script type="text/javascript" src="dist/js/phno.js"></script> -->

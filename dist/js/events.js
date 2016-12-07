@@ -6,6 +6,7 @@ var Tabs= (function($){
 	var DropDownArrow = "<span class=\"caret\"></span>";
 	var generalTab;
 	var contactTab;
+	var sports =[];
 
 
 	function init(){
@@ -32,7 +33,9 @@ var Tabs= (function($){
 			contactTab.attr("href","#contact-"+Gender);
 			// generalTab.attr("aria-controls","general-"+Gender);
 			// contactTab.attr("aria-controls","contact-"+Gender2);
-			generalTab.trigger("click");
+			setTimeout(function(){
+				generalTab.trigger("click");
+			},500);
 	}
 	return{
 		init_tabs: init,
@@ -42,4 +45,59 @@ var Tabs= (function($){
 
 })(jQuery);
 
+var Slides = (function($){
+
+	var slidesMain;
+	var currentSlide;
+	var prev;
+	var next;
+	var slidesContainer;
+	var currentX;
+
+	function init(){
+		currentX = 0;
+		cacheDOM();
+		BindEvents();
+
+
+	}
+	function BindEvents(){
+		prev.on("click",goToPrev);
+		next.on("click",goToNext);
+
+	}
+	function goToPrev(){
+		currentX+=800;
+		slidesContainer.css("transform","translate("+currentX+"px,0px)");
+		checkCurrentX();
+
+	}
+
+	function goToNext(){
+		currentX-=800;
+		slidesContainer.css("transform","translate("+currentX+"px,0px)");
+		checkCurrentX();
+	}
+	function cacheDOM(){
+		slidesMain = $(".slides");
+		slidesContainer = $(".slides-container");
+		prev = $(".prev");
+		next = $(".next");
+
+
+	}
+
+	function checkCurrentX(){
+		if(currentX < -1800) {currentX = 1800;}
+		else if(currentX > 1800) {currentX = -1800;}
+	}
+
+	return{
+		init_slides: init,
+	}
+
+
+})(jQuery);
+
+// Slides.init_slides();
 Tabs.init_tabs();
