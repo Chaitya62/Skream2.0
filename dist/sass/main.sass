@@ -5,11 +5,54 @@ $darkBlue: #2a4a82
 $lightBlue: #aabfe2
 $blue: #4664a4
 $grey: #d1d2d4
+
+@font-face
+	font-family: 'mosk'
+	src: url("..../assets/font/MB700.ttf")
+	src: url("../../assets/font/MUB900.ttf")
+	src: url("../../assets/font/MB700.ttf")
+	src: url("../../assets/font/MBB800.ttf")
+	src: url("../../assets/font/MSB600.ttf")
+	src: url("../../assets/font/MM500.ttf")
+	src: url("../../assets/font/MN400.ttf")
+	src: url("../../assets/font/ML300.ttf")
+	src: url("../../assets/font/ML200.ttf")
+	src: url("../../assets/font/MT100.ttf")
+
+
+// @font-face {
+//     font-family: 'mosk';
+    
+    
+// }
+// @font-face
+// {
+//   font-family: 'moskbold';
+//   src: url("../assets/font/MB900.ttf");
+// }
+
+
+
+//utility
+.margin-zero
+	margin-left: 0 !important
+
+
+
 body,html,nav,header
 	width: auto 
+	font-family: 'mosk'
+	font-size: 100%
 	overflow-x: hidden
-nav 
-	height: auto 
+
+p
+	font-family: 'mosk'
+	//font-size:
+	wegiht: 200
+h1
+	font-family: 'mosk'
+nav
+	height: auto
 	width: 100%
 	position: fixed !important
 	z-index: 1000 
@@ -17,16 +60,55 @@ nav
 	right: 0
 	left: 0
 	padding: 10px
+	padding-bottom: 0
 	border: 0
 	margin: 0
 	background-color: $grey !important
 	color: $darkOrange !important
- 
+	overflow: hidden
+#navbar-logo
+	height: 5vh
+	margin-left: 20%
+#main-logo
+	height: 56vh
+	width: auto
+	margin-left: -16%
+
+.navbar 
+	height: 6vh !important 
+ 	
+.navbar-container
+	display: inline-block
+	width: 100%
+.nav-current
+	display: inline-block
+	float: right
+	position: relative
+	right: 0
+	font-size: 21px
+	color: black
+	
+.navbar-header
+	display: inline-block
+	
+.navbar-brand
+	padding-top: 0 !important
+
 #bars
+	margin-left: 41%
 	color: $darkOrange
 #bars:hover
 	color: $orange
 
+#main 
+	overflow-x: hidden
+	position: relative
+	z-index: 100
+	width: 100%
+	overflow: hidden
+	.container
+		margin: auto
+		transition: margin 0.5s ease-in-out
 body,header
 	border: 0
 	padding: 0
@@ -36,10 +118,17 @@ body,header
 h1
 	text-align: center
 #parallax
-	background-image: url('https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg')
+	//background-image: url('https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg')
+	background-image: url('../../assets/images/kjsce.jpg')
 	background-attachment: fixed
-	bakcground-position: center
+	background-position: center
+	//background-size: cover
 	height: 40vh
+#parallax2
+	@extend #parallax
+	//background-image: url('http://www.w3schools.com/css/trolltunga.jpg')
+	background-image: url('../../assets/images/skream.jpg')
+	background-size: cover
 
 
 
@@ -49,7 +138,7 @@ h1
 	left: 0
 	z-index: 100
 	visibility: hidden
-	width: 300px
+	width: 250px
 	transform: translate(-300px,0px)
 	height: 100%
 	background: #eee
@@ -57,19 +146,25 @@ h1
 
 	transition: all 0.5s
 
-		
-.open
-	transform: translate(300px,0px) !important
+div#fuck
+	position: relative
+	z-index: 10000
+	cursor: pointer		
+
 	
 #main 
+	height: auto
 	position: relative
 	transform: translate(0px,0px)
 	transition: transform 0.6s
 	width: 100vw
 
-
+#dtd
+	height: 100%
+	width: auto
+	margin-left: 10%
 	
-.open2
+.openbar2
 	transform: translate(0px,0px) !important
 	visibility: visible !important
 .sidebar-nav li
@@ -77,15 +172,21 @@ h1
 	padding: 10px
 	margin-bottom: 2px
 	text-align: left
-	font-size: 19px
+	font-size: 15px
+	i
+		margin-right: 5%
 
 	color: black !important
 	&:hover
 		color: $orange
-		background-color: $grey
+		background-color: rgba($grey,0.4)
 
 .side-bar
-	overflow: hidden	
+	overflow: hidden
+	height: 100vh !important
+
+.container-fluid
+	padding: 0 !important	
 
 .sidebar-nav
 	padding: 0px
@@ -95,6 +196,7 @@ h1
 	position: fixed
 	bottom: 0
 	right: 1%
+	z-index: 10000
 
 	ul
 		display: block
@@ -110,6 +212,7 @@ h1
 				&:hover
 					color: darken($lightBlue,5%)
 
+
 .register
 	position: fixed
 	bottom: 9%
@@ -120,6 +223,7 @@ h1
 	width: 60px
 	text-align: center
 	cursor: pointer
+	z-index: 100000
 .register i
 	position: relative !important
 	top: calc(40% - 10px)
@@ -137,10 +241,10 @@ footer
 	left: 0
 	z-index: 100
 	visibility: hidden
-	width: 300px
+	width: 250px
 	transform: translate(-300px,0px)
 	height: auto
-	background: #eee
+	background: transparent
 	-webkit-transition: all 0.5s
 
 	transition: all 0.5s
@@ -149,8 +253,8 @@ footer
 	margin: 0
 	padding: 0
 		
-.open
-	transform: translate(300px,0px) !important
+.openbar
+	transform: translate(200px,0px) !important
 	
 #main 
 	position: relative
@@ -164,7 +268,7 @@ footer
 	
 
 	
-.open2
+.openbar2
 	transform: translate(0px,0px) !important
 	visibility: visible !important
 
@@ -173,3 +277,299 @@ footer
 	bottom: 0
 	right: 0
 	left: 0
+#ray
+	background: url('../../assets/images/background.png')
+	background-position: center
+	background-size: cover
+	background-attachment: fixed
+	height: 70vh
+	width: auto
+.ray-container
+	height: 100%
+	width: auto
+	margin-top: 100px
+
+.ray-body
+	height: 30vh
+	float: left
+
+	img 
+		margin-top: -30px
+		margin-left: 12%
+		height: 40vh !important
+
+.ray-name img
+	margin-top: 10%
+	margin-left: 60%
+
+.ray-text
+	color: white
+	padding: 20px
+	padding-left: 40%
+	margin-left: 12%
+
+.about 
+	background: white
+
+.hero
+	height: 100vh
+
+//mobile ray
+
+@media (min-width: 2000px) and (max-width: 2640px)
+	#dtd
+		height: 20vh !important
+		width: auto
+		margin-left: 0% !important
+		
+	#main-logo
+		margin-left: -61%
+		margin-top: 8%
+	.ray-body img 
+		margin-left: -59%
+		margin-top: 35%
+	.ray-name
+		margin-top: -22%
+		img 
+			margin-left: 81%
+	.ray-text
+		margin-right: -17%
+		margin-left: 33%
+
+@media (min-width: 2000px)  and (max-width: 2640px)
+	#main-logo
+		margin-left: -5%
+		margin-top: 4%
+	.ray-name
+		margin-top: 0%
+	.ray-body img 
+		margin-left: -39%
+		margin-top: 0%
+	#navbar-logo
+		height: 4vh
+
+
+@media (min-width: 1100px) and (max-width: 1400px)
+	#main-logo
+		margin-left: -20%
+
+
+@media (min-width: 1100px) and (max-width: 1400px)
+	#main-logo	
+		margin-left: 2%
+		margin-top: 1%
+	.ray-name
+		margin-top: -3%
+	.ray-name img 
+		margin-left: 64%
+		margin-top: 13%
+	.ray-body img 
+		margin-left: 0%
+		margin-top: 3%
+
+	.ray-text
+		margin-right: 4%
+		margin-left: 20%
+
+
+@media only screen and (max-width: 1200px)
+	.ray-name
+		margin-top: -3%
+	.ray-name img 
+		margin-left: 64%
+		margin-top: 13%
+	.ray-body img 
+		margin-left: 0%
+		margin-top: 3%
+
+	.ray-text
+		margin-right: -2%
+		margin-left: 18%
+
+
+@media only screen and (max-width: 768px)
+	#top-row
+		margin-top: 15%
+	#main-logo
+		margin-left: 9%
+		margin-top: -6%
+		width: auto
+		height: 33vh
+	#dtd
+		//margin-left: 0px
+		height: 15vh !important
+	.navbar-brand
+		padding-top: 0px !important
+	.ray-body img 
+		margin-left: 13%
+		margin-top: 4%
+	.ray-name
+		margin-top: -4%
+	.ray-name img 
+		margin-left: 61%
+
+	.ray-text
+		margin-left: 17%
+		margin-right: -3%
+
+@media only screen and (max-width: 500px)
+	#main-logo
+		height: 25vh
+		margin-left: -1%
+	
+	#dtd
+		height: 9vh !important
+		margin-left: -27%
+	.navbar .navbar-brand
+		padding-top: 0px !important
+	#bars
+		margin-left: 13px
+
+	.ray-container
+		margin-top: 72px
+
+	.ray-body
+		height: 27vh
+
+	.ray-body img
+		margin-top: -66px
+		margin-left: 16%
+		height: 36vh !important
+
+	.ray-name img 
+		height: 15vh
+		margin-top: 10%
+		margin-left: 29%
+
+
+
+	.ray-text
+		margin-left: -29%
+
+
+@media only screen and (max-width: 420px)
+	#main-logo
+		height: 25vh
+		margin-left: -11%
+	
+	#dtd
+		height: 9vh !important
+		margin-left: -27%
+	.navbar .navbar-brand
+		padding-top: 0px !important
+	#bars
+		margin-left: 13px
+
+	.ray-container
+		margin-top: 72px
+
+	.ray-body
+		height: 27vh
+
+	.ray-body img
+		margin-top: -66px
+		margin-left: 7%
+		height: 36vh !important
+
+	.ray-name 
+		margin-top: 0%
+	.ray-name img 
+		margin-left: 26%
+	.ray-text
+		margin-left: -41%
+		margin-right: 4%
+		
+@media only screen and (max-width: 415px)
+	#main-logo
+		height: 24vh
+		margin-left: -17%
+	
+	#dtd
+		height: 9vh !important
+		margin-left: -28% !important
+	.navbar .navbar-brand
+		padding-top: 0px !important
+	#bars
+		margin-left: 13px
+
+	.ray-container
+		margin-top: 72px
+
+	.ray-body
+		height: 27vh
+
+	.ray-body img
+		margin-top: -66px
+		margin-left: 1%
+		height: 36vh !important
+
+	.ray-name 
+		margin-top: 0%
+	.ray-name img 
+		margin-left: 24%
+	.ray-text
+		margin-left: -35%
+		margin-right: 4%
+
+
+
+@media only screen and (max-width: 390px)
+
+	#main-logo
+		height: 24vh
+		margin-left: -8%
+	#dtd
+		height: 8vh !important
+		margin-left: 0% !important
+	.ray-body
+		height: 24vh
+	.ray-body img
+		height: 33vh !important
+		margin-left: 13%
+	.ray-name
+		margin-top: -0%
+	.ray-name img
+		height: 12vh
+		margin-left: 34%
+
+
+@media only screen and (max-width: 360px)
+	#main-logo
+		margin-left: -18%
+	
+	.ray-body img 
+		margin-left: 6%
+	.ray-name img 
+		margin-left: 30%
+	.ray-text
+		margin-left: -43%
+
+
+
+
+
+@media only screen and (max-width: 320px)
+	#main-logo
+		height: 19vh
+
+	#dtd 
+		height: 10vh
+
+	#top-row
+		margin-top: 36%
+	.ray-body img
+		height: 32vh !important
+		margin-left: 3%
+
+	.ray-name img
+		margin-left: 27%
+	.ray-text
+		font-size: 11px
+		margin-left: -20%
+		margin-right: 0%
+
+
+		
+
+
+

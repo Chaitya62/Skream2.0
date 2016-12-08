@@ -1,0 +1,176 @@
+$darkOrange: #de631e
+$orange: #eb8122
+$lightOrange: #f9a41b
+$darkBlue: #2a4a82
+$lightBlue: #aabfe2
+$blue: #4664a4
+$grey: #d1d2d4
+$tabsbg: #000
+body 
+	overflow: hidden
+#events
+	display: flex
+	display: -webkit-flex
+	// align-items: center
+	justify-content: center
+	height: 100vh
+	position: fixed
+	flex-direction: column
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	z-index: 10000
+.dropdown
+	float: left !important
+
+#detail-toggle
+	float: right !important
+
+#togglable-tabs
+	
+
+#myTabs
+	margin-top: 10% !important
+	background-color: rgba($tabsbg,0.1)
+
+.nav-tabs
+	.active
+		background-color: rgba($tabsbg,0.25)
+.video 
+	video
+		position: fixed
+		top: 50% 
+		left: 50%
+		z-index: -1
+		min-width: 100%
+		min-height: 100%
+		width: auto
+		height: auto
+		transform: translate(-50%, -50%)
+.dropdown-menu
+	background: rgba(white,0.8) !important
+	color: white
+#myTabContent
+	max-height: 35vh 
+	overflow-y: auto
+	min-height: 35vh
+	background: rgba(white, 0.7)
+::-webkit-scrollbar
+	width: 4px
+::-webkit-scrollbar-track
+	-webkit-box-shadow: inset 0 0 6px rgba($tabsbg,1)
+	background: white
+
+::-webkit-scrollbar-thumb
+	border-radius: 20px
+	-webkit-box-shadow: inset 0 0 6px rgba($tabsbg,0.4)
+	background: $lightOrange
+
+#rules
+	margin-bottom: 10%
+
+#footer-nav
+	background-color: rgba($tabsbg,0.6)
+	width: 100vw
+	color: white
+	position: fixed
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 0
+.current-sport
+	background-color: rgba($tabsbg,0.3)
+	padding: 10px
+	float: left
+	position: absolute
+	top: 12%
+	left: 7%
+	padding-left: 42px
+	padding-right: 42px
+	z-index: 10000 
+
+// .event-type
+// 	ul 
+// 		list-style: none
+// 		position: absolute
+// 		top: 5%
+// 		right: 4%
+// 		li 
+// 			background-color: rgba($tabsbg,0.1)
+// 			color: white
+// 			padding: 10px
+// 			float: left
+// 			padding-right: 42px
+// 			padding-left: 42px
+			
+// 		.active
+// 			background-color: rgba($tabsbg,0.4)
+#EventTypes
+	position: fixed
+	top: 13%
+	background-color: transparent
+	width: 80%
+	overflow: hidden
+	li 
+		float: right
+	border: 0
+#home,#profile
+	height: 100vh
+	overflow: hidden
+
+#myTabContent
+	overflow-x: hidden
+
+.slides
+	background: tranparent
+	height: 100vh
+	width: 200%
+
+	
+
+.slides-container
+	width: 600%
+	.slide1,.slide2,.slide3
+		background: transparent
+		height: 100vh
+		width: 700px
+		display: inline-block
+		transform: translate(0%,0%)
+		transition: all 1s ease-in-out
+	.slide2
+		background: transparent 
+
+	transform: translate(0%,0%)
+	transition: all 1s ease-in-out
+
+.slide-nav
+	li
+		height: 5vh 
+		width: 10%
+
+.carousel-indicators
+	bottom: 10px
+	color: black
+	font-weight: 100
+	z-index: 10000
+	height: 100px
+	width: 100%
+	cursor: pointer
+	background: $grey
+	margin: 0px
+	left: 0px
+	div
+		display: inline-block
+		height: 5vh
+		width: 13%
+		float: left
+	.active
+		background: darken($grey,10)
+
+.carousel-control
+	color: black
+
+	&:hover
+		color: $orange
+	
