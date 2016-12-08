@@ -52,12 +52,12 @@ body {
 
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px black;
-  background: black; }
+  background: white; }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
-  background: white; }
+  background: black; }
 
 #rules {
   margin-bottom: 10%; }
@@ -98,7 +98,7 @@ body {
   overflow: hidden; }
 
 #myTabContent {
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 .slides {
   background: tranparent;
@@ -136,9 +136,14 @@ body {
   .carousel-indicators div {
     display: inline-block;
     height: 5vh;
-    width: 20%;
+    width: 13%;
     float: left; }
   .carousel-indicators .active {
     background: #b7b8bb; }
+
+.carousel-control {
+  color: black; }
+  .carousel-control:hover {
+    color: #eb8122; }
 
 /*# sourceMappingURL=events.css.map */
